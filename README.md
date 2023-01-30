@@ -11,4 +11,4 @@
 
 頁面呈現效果如下圖：
 
-![image](https://github.com/adad09382/Static-Web-Page_Exercise-3/blob/master/README.png)
+![image](https://github.com/adad09382/Static-Web-Page_Exercise-3/blob/master/README.gif)
