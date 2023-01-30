@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  margin: 1rem 0.5rem;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+body {
+  background-color: #272727;
+  color: white;
+  font-family: "Baloo 2", cursive;
+}
+body section.animation_wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+body section.animation_wrapper section.animation {
+  margin-top: 10vh;
+  height: 80vh;
+  border: 5px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body section.animation_wrapper section.animation .hero {
+  border: 2px solid green;
+  width: 100%;
+  height: 0%;
+}
+body section.animation_wrapper section.animation .hero img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body section.animation_wrapper div.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, rgb(144, 144, 144), rgb(0, 0, 0));
+  z-index: -1;
+}
+body header nav {
+  box-shadow: 0 8px 6px -6px black;
+}
+body header nav ul {
+  display: flex;
+}
+body header nav ul li {
+  list-style: none;
+  padding: 1.25rem;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+body main section.main_part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main section.main_part h1 {
+  font-size: 2.5rem;
+}
+body main section.main_part div.all_input form div.grade input,
+body main section.main_part div.all_input form div.grade select {
+  font-size: 1.15rem;
+  border-radius: 5px;
+  margin: 0.25rem;
+}
+body main section.main_part div.all_input form div.grade input.class_credits {
+  width: 4.5rem;
+}
+body main section.main_part div.all_input form div.grade button.trash_button {
+  border: none;
+  cursor: pointer;
+  background-color: #272727;
+}
+body main section.main_part div.all_input form div.grade button.trash_button i.fa-trash {
+  font-size: 1.15rem;
+  color: white;
+  pointer-events: none;
+}
+body main section.main_part div.plus_btn {
+  margin: 2rem;
+}
+body main section.main_part div.plus_btn button.plus_btn {
+  background-color: #272727;
+  cursor: pointer;
+  border: none;
+}
+body main section.main_part div.plus_btn button.plus_btn i.fa-plus-square {
+  font-size: 2.5rem;
+  color: white;
+}
+body main section.grade_count div.gpa {
+  padding: 1.5rem;
+  border: 5px solid red;
+  border-radius: 50%;
+  -webkit-animation: border_color 8s infinite;
+          animation: border_color 8s infinite;
+}
+body main section.grade_count div.gpa p {
+  text-align: center;
+  font-size: 1rem;
+}
+body main section.grade_count div.gpa h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.remove {
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+
+@-webkit-keyframes border_color {
+  0% {
+    border-color: red;
+  }
+  33% {
+    border-color: lightgreen;
+  }
+  66% {
+    border-color: yellow;
+  }
+}
+
+@keyframes border_color {
+  0% {
+    border-color: red;
+  }
+  33% {
+    border-color: lightgreen;
+  }
+  66% {
+    border-color: yellow;
+  }
+}
+@-webkit-keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes scaleDown {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes scaleDown {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}/*# sourceMappingURL=style.css.map */
